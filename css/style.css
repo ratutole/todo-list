@@ -1,14 +1,124 @@
 
+/* **********************
+Global Styles
+********************************** */
 
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: linear-gradient("steelblue","white"); */
+    background: linear-gradient(to left, white,steelblue);
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1{
+    background-color: slateblue;
+    color: white;
+    margin: 0;
+    padding: .5rem 1rem;
+    font-weight: 400;
+    /* height: 80px; */
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+
+
+input{
+    padding: 2% 2%;
+    margin: 0;
+    border: 3px solid rgba(0,0,0,0);
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+input:focus{
+    border: 2px solid purple;
+    background-color: white;
+}
+li:nth-of-type(odd){
+    background-color: white;
+}
+
+button{
+    color: white;
+    border: none;   
+    background: none;
+    height: 100%;
+    font-size: 2rem;
+    float: right;
+}
+
+i{
+    color: white;
+}
+
+span{
+    /* width: 50px; */
+    /* color: yellow;   */
+    /* paddin   g: 5px 10px; */
+    display: inline-block;
+
+    background: tomato;
+    color: wheat;
+    height: 100%;
+    margin-right: 20px;
+    text-align: center;
+    width: 0px;
+    /* display: none; */
+    /* opacity: 0; */
+}
+
+i{
+    /* width: 0; */
+}
+
+li:hover span{
+    color: white;
+    animation-name: trash;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;  
+    /* display:none; */
+}
+
+@keyframes trash{
+   100%{
+       width: 40px;
+        /* opacit   y: 1; */
+        background-color: black;
+    }
+}
 /* Styles by ID */
 /* checking git integration */
 #wrapper{
-    background-color: steelblue;
+    background-color: #f7f7f7;
     width: 30%;
     margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 2px;
+    /* padding: 1rem; */
+    /* padding: 0px 10px 0px 10px; */
+    box-shadow: 6px 6px 4px 2px rgba(162, 133, 214, 0.2);
 }
 
+
+/**********************************
+ Class styles 
+ ************************************/
 .tasks-done{
-    color: white;
+    color: gray;
     text-decoration: line-through;
 }

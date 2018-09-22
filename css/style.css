@@ -3,5 +3,12 @@
 /* Styles by ID */
 /* checking git integration */
 #wrapper{
+    background-color: steelblue;
+    width: 30%;
+    margin: 0 auto;
+}
 
+.tasks-done{
+    color: white;
+    text-decoration: line-through;
 }
